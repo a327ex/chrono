@@ -2,13 +2,13 @@
 
 **chrono** is a timer module for LÖVE. It's a copy of [hump.timer](hump.readthedocs.io/en/latest/timer.html) with a few improvements on top.
 
-<br>
-
 ## Usage
 
 ```lua
 Timer = require 'Timer'
 ```
+
+<br>
 
 ### Creating a timer object
 
