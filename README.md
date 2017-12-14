@@ -29,7 +29,7 @@ However, you can also only use a single global one if you think that's better.
 
 <br>
 
-### After
+### after
 
 ```lua
 function love.load()
@@ -49,7 +49,7 @@ timer:after(delay, action, tag)
 
 <br>
 
-### Every
+### every
 
 ```lua
 function love.load()
@@ -95,7 +95,7 @@ timer:every(delay, action, count, after, tag)
 
 <br>
 
-### During
+### during
 
 ```lua
 function love.load()
@@ -127,7 +127,7 @@ timer:during(delay, action, after, tag)
 
 <br>
 
-### Script
+### script
 
 ```lua
 function love.load()
@@ -159,7 +159,7 @@ end
 
 <br>
 
-### Tween
+### tween
 
 ```lua
 function love.load()
