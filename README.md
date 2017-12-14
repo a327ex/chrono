@@ -4,6 +4,22 @@
 
 <br>
 
+# Contents
+
+* [Usage](#usage)
+* [Creating a timer object](#creating-a-timer-object)
+* [after](#after)
+* [every](#every)
+* [during](#during)
+* [script](#script)
+* [tween](#tween)
+* [Tags](#tags)
+* [Random delays](#random-delays)
+* [cancel, getTime](#cancel-gettime)
+* [destroy](#destroy)
+
+<br>
+
 ## Usage
 
 ```lua
