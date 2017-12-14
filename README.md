@@ -1,6 +1,6 @@
 # chrono 
 
-**chrono** is a timer module for LÖVE. It's a copy of [hump.timer](hump.readthedocs.io/en/latest/timer.html) with a few improvements on top.
+**chrono** is a timer module for LÖVE. It's a copy of [hump.timer](http://hump.readthedocs.io/en/latest/timer.html) with a few improvements on top.
 
 <br>
 
