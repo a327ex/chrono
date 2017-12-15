@@ -169,8 +169,8 @@ function Timer:__tween(method, ...)
     if method == 'linear' then return t.linear(...)
     elseif method:find('in%-out%-') then return t.chain(t[method:sub(8, -1)], t.out(t[method:sub(8, -1)]))(...)
     elseif method:find('out%-in%-') then return t.chain(t.out(t[method:sub(8, -1)]), t[method:sub(8, -1)])(...)
-    elseif method:find('out-') then return t.out(t[method:sub(5, -1)])(...)
-    elseif method:find('in-') then return t[method:sub(4, -1)](...) end
+    elseif method:find('out%-') then return t.out(t[method:sub(5, -1)])(...)
+    elseif method:find('in%-') then return t[method:sub(4, -1)](...) end
 end
 
 function Timer:__tweenCollectPayload(subject, target, out)
