@@ -128,8 +128,8 @@ function Timer:script(f)
 end
 
 function Timer:tween(delay, subject, target, method, after, tag, ...)
-    if type(after) == 'string' then tag, after = after, nil
-    tag = tag or UUID() end
+    if type(after) == 'string' then tag, after = after, nil end
+    tag = tag or UUID()
     self:cancel(tag)
     self.timers[tag] = {type = 'tween', time = 0, delay = self:__getResolvedDelay(delay), subject = subject, target = target, method = method, after = after or function() end, 
                         args = {...}, last_s = 0, payload = self:__tweenCollectPayload(subject, target, {})}
