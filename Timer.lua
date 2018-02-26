@@ -46,7 +46,7 @@ function Timer:update(dt)
         elseif timer.type == 'every' then
             if timer.time >= timer.delay then
                 timer.action()
-                timer.time = 0
+                timer.time = timer.time - timer.delay
                 timer.delay = self:__getResolvedDelay(timer.any_delay)
                 if timer.count > 0 then
                     timer.counter = timer.counter + 1
