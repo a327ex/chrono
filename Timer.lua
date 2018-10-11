@@ -39,7 +39,7 @@ function Timer:update(dt)
 
         if timer.type == 'after' then
             if timer.time >= timer.delay then
-                timer.action()
+                timer.action(timer.action())
                 self.timers[tag] = nil
             end
 
