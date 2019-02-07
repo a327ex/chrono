@@ -73,6 +73,9 @@ function Timer:update(dt)
                 ref[key] = ref[key] + delta*ds
             end
             if timer.time >= timer.delay then
+                for k, v in pairs(timer.target) do
+                    timer.subject[k] = v
+                end
                 timer.after()
                 self.timers[tag] = nil
             end
